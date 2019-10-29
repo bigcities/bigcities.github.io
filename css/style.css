@@ -1,3 +1,27 @@
+.page {
+    margin-top: 2em;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+    outline-color: initial;
+    outline-style: initial;
+    outline-width: 0px;
+}
+
+.sidebar ul {
+    list-style: none;
+    list-style-type: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    padding-left: 0;
+}
+
+li {
+    line-height: 200%;
+}
+
 .list-group-item.active>.badge,
 .nav-pills>.active>a>.badge {
     color: #5a5f64;
