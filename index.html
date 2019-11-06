@@ -6,7 +6,20 @@
     <link rel="icon" href="./img/header.png">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .index-dropdown {
+            max-height: 0;
+            overflow-y: hidden;
+            transition: max-height 0.5s;
+        }
+        .index-dropdown.active {
+            max-height: 300px;
+        }
 
+        .index-dropdown li {
+            padding-left: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,7 +37,13 @@
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="wangjingyuan.html">People</a></li>
-                            <li><a href="#">Publications</a></li>
+                            <div class="index-trigger">
+                                <li><a href="#">Publications</a></li>
+                                <div class="index-dropdown">
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                </div>
+                            </div>
                             <li><a href="#">Visualizations</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -134,6 +153,9 @@
             </div>
         </div>
     </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/banner.js"></script>
 </body>
 
 
