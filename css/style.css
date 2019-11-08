@@ -1,5 +1,10 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif, Arial, sans-serif;
+}
+
 .page {
     margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 a:active,
@@ -22,15 +27,36 @@ li {
     line-height: 200%;
 }
 
-.list-group-item.active>.badge,
-.nav-pills>.active>a>.badge {
-    color: #5a5f64;
-    background-color: #fff;
+.index-dropdown {
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 1s;
 }
 
-.nav-pills>li.active>a,
-.nav-pills>li.active>a:hover,
-.nav-pills>li.active>a:focus {
-    color: #fff;
-    background-color: #5a5f64;
+.index-dropdown.active {
+    max-height: 300px;
+}
+
+.index-dropdown li {
+    padding-left: 20px;
+}
+
+h1,
+h2 {
+    color: #527bbd;
+    margin-top: 0.7em;
+    margin-bottom: 0.3em;
+    padding-bottom: 0.2em;
+    line-height: 1.0;
+    padding-top: 0.5em;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+h3 {
+    color: #527bbd;
+    margin-top: 0.7em;
+    margin-bottom: 0.3em;
+    padding-bottom: 0.2em;
+    line-height: 1.0;
+    padding-top: 0.5em;
 }
