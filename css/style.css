@@ -1,5 +1,5 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif, Arial, sans-serif;
+    font-family: 'Times New Roman', 'Georgia';
 }
 
 .page {
@@ -23,8 +23,13 @@ a:hover {
     padding-left: 0;
 }
 
-li {
+.sidebar li {
     line-height: 200%;
+    font-size: 20px;
+}
+
+li {
+    font-size: 16px;
 }
 
 .index-dropdown {
@@ -41,8 +46,7 @@ li {
     padding-left: 20px;
 }
 
-h1,
-h2 {
+h1 {
     color: #527bbd;
     margin-top: 0.7em;
     margin-bottom: 0.3em;
@@ -50,6 +54,15 @@ h2 {
     line-height: 1.0;
     padding-top: 0.5em;
     border-bottom: 1px solid #aaaaaa;
+}
+
+h2 {
+    color: #527bbd;
+    margin-top: 0.7em;
+    margin-bottom: 0.3em;
+    padding-bottom: 0.2em;
+    line-height: 1.0;
+    padding-top: 0.5em;
 }
 
 h3 {
@@ -61,8 +74,26 @@ h3 {
     padding-top: 0.5em;
 }
 
+p {
+    font-size: 16px;
+}
+
+
 .photo {
     width: 30%;
     margin: 2.5%;
 
+}
+
+.footer {
+    justify-content: center;
+    padding: 0;
+    background-color: #757d85;
+    color: #fff;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.sidebar {
+    font-size: 15px;
 }
